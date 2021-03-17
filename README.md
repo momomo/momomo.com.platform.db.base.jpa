@@ -3,7 +3,7 @@
 
 ## momomo.com.platform.db.base.jpa
 
-###### The absolute base of the database related jpa modules
+###### The absolute base of our database related jpa modules
 
 #### Dependencies 
 * [`momomo.com.platform.Core`](https://github.com/momomo/momomo.com.platform.Core) 
@@ -16,7 +16,7 @@
 <dependency>
   <groupId>com.momomo</groupId>
   <artifactId>momomo.com.platform.db.base.jpa</artifactId>
-  <version>2.1.5</version>
+  <version>2.1.6</version>
 </dependency>                                                      
 ```                         
 ##### Repository
