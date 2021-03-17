@@ -8,13 +8,14 @@
 #### Dependencies 
 * [`momomo.com.platform.Core`](https://github.com/momomo/momomo.com.platform.Core) 
 * [`momomo.com.platform.Lambda`](https://github.com/momomo/momomo.com.platform.Lambda)
+* [`momomo.com.platform.db.base`](https://github.com/momomo/momomo.com.platform.db.base)
 
 ##### Maven dependencies available on maven central [search.maven.org](https://search.maven.org/search?q=com.momomo)
 ##### Dependency   
 ```xml
 <dependency>
   <groupId>com.momomo</groupId>
-  <artifactId>momomo.com.platform.db.base</artifactId>
+  <artifactId>momomo.com.platform.db.base.jpa</artifactId>
   <version>2.1.5</version>
 </dependency>                                                      
 ```                         
