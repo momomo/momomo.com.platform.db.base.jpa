@@ -1,12 +1,11 @@
 package momomo.com.db;
 
-import momomo.com.Base.encryption.Password;
+import momomo.com.Constants;
 import momomo.com.Is;
 import momomo.com.Lambda;
 import momomo.com.Reflects;
 import momomo.com.db.annotations.$Password;
 import momomo.com.db.annotations.$Unique;
-import momomo.com.reflection.Reflect;
 
 import java.lang.reflect.Field;
 import java.util.HashSet;
@@ -120,7 +119,7 @@ public interface $RepositoryValidation extends $RepositoryDeclaration {
             cache.associations .clear();
 
             // Loop through annotations, here look for @Unique
-            Field[] fields = Reflect.localFields(entity.getClass());
+            Field[] fields = Reflects.getFieldsLocal(entity.getClass());
             for ( Field field : fields ) {
 
                 if ( repository().isAssociation(Reflects.getValue(entity, field)) ) {
@@ -162,10 +161,8 @@ public interface $RepositoryValidation extends $RepositoryDeclaration {
     // Validation for the masses. Can be used on a random entity and field. 
     // Not really that useful outside of the build in validation.
     // Currently left private unless shown to be needed later.
-    // TODO review, subClass is not used, why, is this correct now?
     private <Z extends $Entity, T extends $Entity> void validateAssociation(T entity, Field field, $EntityErrors errors) {
-        Z subEntity = Reflects.cast(Reflects.getValue(entity, field));
-        Class<Z> subClass = Reflects.cast(subEntity.getClass());
+        Z             subEntity = Reflects.cast(Reflects.getValue(entity, field));
         $EntityErrors subErrors = validate(subEntity);
 
         errors.add(field.getType().getSimpleName(), subErrors);
@@ -201,10 +198,10 @@ public interface $RepositoryValidation extends $RepositoryDeclaration {
         Object value    = Reflects.getValue(entity, field);
 
         String error = null;
-        if ( Password.Cons.PASSWORD_INCORRECT_REPEAT_VAL.equals(value) ) {
+        if ( Constants.Password.PASSWORD_INCORRECT_REPEAT_VAL.equals(value) ) {
             error = $Password.INCORRECT_REPEAT;
         }
-        else if ( Password.Cons.PASSWORD_INCORRECT_LENGTH_VAL.equals(value) ) {
+        else if ( Constants.Password.PASSWORD_INCORRECT_LENGTH_VAL.equals(value) ) {
             error = $Password.INCORRECT_LENGTH;
         }
 
