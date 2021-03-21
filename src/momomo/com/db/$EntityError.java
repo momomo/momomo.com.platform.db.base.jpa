@@ -2,6 +2,7 @@
 package momomo.com.db;
 
 import momomo.com.annotations.$Exclude;
+import momomo.com.db.entities.$Entity;
 
 import javax.validation.ConstraintViolation;
 import java.io.Serializable;

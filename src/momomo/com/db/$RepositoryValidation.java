@@ -1,5 +1,7 @@
 package momomo.com.db;
 
+import momomo.com.db.entities.$Entity;
+import momomo.com.db.entities.$EntityId;
 import momomo.com.sources.Constants;
 import momomo.com.Is;
 import momomo.com.Lambda;

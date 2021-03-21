@@ -2,6 +2,7 @@ package momomo.com.db;
 
 import momomo.com.Lambda;
 import momomo.com.annotations.informative.Protected;
+import momomo.com.db.entities.$Entity;
 import momomo.com.exceptions.$DatabaseSaveException;
 
 import java.io.Serializable;

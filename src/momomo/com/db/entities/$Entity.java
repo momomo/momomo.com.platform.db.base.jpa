@@ -1,5 +1,5 @@
 /* Copyright(C) 2014 - 2020 Momomo LTD. Proprietary and confidential. Usage of this file on any medium without a written consent by Momomo LTD. is strictly prohibited. All Rights Reserved. */
-package momomo.com.db;
+package momomo.com.db.entities;
 
 import momomo.com.Is;
 import momomo.com.Lambda;
@@ -13,21 +13,9 @@ import java.io.Serializable;
  */
 @MappedSuperclass public interface $Entity extends Serializable {
     
-    /////////////////////////////////////////////////////////////////////
-    
-    static final String FIND_BY_ENTITY = "!!!###FIND_IGNORE###!!!";
-    
-    /////////////////////////////////////////////////////////////////////
-    
     class Cons {
-        public static final String owner = "owner";
-        
-        public static final String DISCRIMINATOR_COLUMN    = "class";
-        public static final long   INDEX_START             = 1L;
-        
-        public static final String GENERATOR_ID = "momomo.com.SequenceStyleGenerator";
-        public static final String GENERATOR_STRATEGY = "org.hibernate.id.enhanced.SequenceStyleGenerator";
-        
+        public static final String DISCRIMINATOR_COLUMN = "class";
+        public static final String FIND_BY_ENTITY       = "!!!###FIND_IGNORE###!!!"; // Just a special key used someplace related to entities
     }
     
     /////////////////////////////////////////////////////////////////////

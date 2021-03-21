@@ -1,5 +1,7 @@
 package momomo.com.db;
 
+import momomo.com.db.entities.$Entity;
+
 import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.HashSet;

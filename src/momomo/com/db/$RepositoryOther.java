@@ -1,6 +1,8 @@
 package momomo.com.db;
 
 import momomo.com.annotations.informative.Private;
+import momomo.com.db.entities.$Entity;
+import momomo.com.db.entities.$EntityId;
 
 import javax.persistence.Embeddable;
 

@@ -4,6 +4,7 @@ package momomo.com.db;
 import momomo.com.$Maps;
 import momomo.com.Is;
 import momomo.com.Reflects;
+import momomo.com.db.entities.$Entity;
 
 import javax.validation.ConstraintViolation;
 import java.io.Serializable;
