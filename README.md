@@ -1,8 +1,6 @@
 <!---
 -->
 
-## momomo.com.platform.db.base.jpa
-
 ###### The absolute base of our database related jpa modules
 
 ##### Dependencies 
