@@ -15,7 +15,7 @@ import java.io.Serializable;
     
     class Cons {
         public static final String DISCRIMINATOR_COLUMN = "class";
-        public static final String FIND_BY_ENTITY       = "!!!###FIND_IGNORE###!!!"; // Just a special key used someplace related to entities
+        public static final String FIND_BY_ENTITY       = "!!!#@_@#!!!FIND_BY_ENTITY!!!#@_@#!!!"; // Just a special key used someplace related to entities
     }
     
     /////////////////////////////////////////////////////////////////////
