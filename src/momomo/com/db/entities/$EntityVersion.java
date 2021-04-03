@@ -2,14 +2,14 @@
 package momomo.com.db.entities;
 
 import javax.persistence.MappedSuperclass;
-import javax.persistence.Version;
 import java.io.Serializable;
 
-@MappedSuperclass
-public interface $EntityVersion<T extends Serializable> {
+/**
+ * @author Joseph S. 
+ */
+@MappedSuperclass public interface $EntityVersion<T extends Serializable> {
     
-    @Version
-    T getVersion();
+    T getVersion(   );
     T setVersion(T t);
     
 }

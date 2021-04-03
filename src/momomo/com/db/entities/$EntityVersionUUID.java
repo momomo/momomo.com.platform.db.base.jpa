@@ -5,21 +5,23 @@ import momomo.com.Randoms;
 
 import javax.persistence.MappedSuperclass;
 import javax.persistence.Version;
+import java.util.UUID;
 
 /**
  * @author Joseph S. 
  */
-@MappedSuperclass public abstract class $EntityVersionLong implements $EntityVersion<Long> {
+@MappedSuperclass public abstract class $EntityVersionUUID implements $EntityVersion<UUID> {
     
-    private @Version Long version = Randoms.Long();
+    @Version private UUID version = Randoms.UUID();
     
     @Override
-    public Long getVersion() {
+    public UUID getVersion() {
         return version;
     }
     
     @Override
-    public Long setVersion(Long version) {
+    public UUID setVersion(UUID version) {
         return this.version = version;
     }
+    
 }

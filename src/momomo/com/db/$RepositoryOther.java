@@ -8,7 +8,6 @@ import javax.persistence.Embeddable;
 
 /**
  * @author Joseph S.
- *
  */
 public interface $RepositoryOther {
     
