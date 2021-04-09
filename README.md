@@ -12,7 +12,7 @@
 * **[`momomo.com.platform.db.base.jpa.session`](https://github.com/momomo/momomo.com.platform.db.base.jpa.session)**
 * **[`momomo.com.platform.db.base.jpa.entitymanager`](https://github.com/momomo/momomo.com.platform.db.base.jpa.entitymanager)**
 * **[`momomo.com.platform.db.base.transactional.Hibernate`](https://github.com/momomo/momomo.com.platform.db.transactional.Hibernate)** 
-* **[`momomo.com.platform.db.base.transactional.Spring`](https://github.com/momomo/momomo.com.platform.db.transactional.Spring) **
+* **[`momomo.com.platform.db.base.transactional.Spring`](https://github.com/momomo/momomo.com.platform.db.transactional.Spring)**
 
 ##### Maven dependencies available on maven central [search.maven.org](https://search.maven.org/search?q=com.momomo)
 ##### Dependency   
