@@ -13,6 +13,8 @@
 * **[`momomo.com.platform.db.base.jpa.entitymanager`](https://github.com/momomo/momomo.com.platform.db.base.jpa.entitymanager)**
 * **[`momomo.com.platform.db.base.transactional.Hibernate`](https://github.com/momomo/momomo.com.platform.db.transactional.Hibernate)** 
 * **[`momomo.com.platform.db.base.transactional.Spring`](https://github.com/momomo/momomo.com.platform.db.transactional.Spring)**
+* **[`momomo.com.example.app.Crypto.based.on.hibernate.libraries`](https://github.com/momomo/momomo.com.example.app.Crypto.based.on.hibernate.libraries)** 
+* **[`momomo.com.example.app.Crypto.based.on.spring.libraries`](momomo.com.example.app.Crypto.based.on.spring.libraries)**
 
 ##### Maven dependencies available on maven central [search.maven.org](https://search.maven.org/search?q=com.momomo)
 ##### Dependency   
@@ -29,7 +31,13 @@
     <id>maven-central</id>
     <url>http://repo1.maven.org/maven2</url>
 </repository>
-```                            
+```                                                                                                                 
+
+### Background
+
+Provides classes and libraries to do **JPA** related things, and exists mostly to support functionality for other libraries / repositories and/or applications.   
+
+See our used by list at the top.
 
 ##### Our other, highlighted [repositories](https://github.com/momomo?tab=repositories)                          
 
